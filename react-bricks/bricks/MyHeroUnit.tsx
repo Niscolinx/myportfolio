@@ -48,8 +48,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
             types.RichTextFeatures.Italic,
             types.RichTextFeatures.Highlight,
             types.RichTextFeatures.Code,
-            types.RichTextFeatures.Link,
-          ]}
+            types.RichTextFeatures.Link          ]}
           renderCode={(props) => (
             <code className="text-sm py-1 px-2 bg-gray-200 dark:bg-gray-700 rounded">
               {props.children}
