@@ -26,6 +26,13 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
           aspectRatio={1}
           imageClassName="w-20 mb-5 mx-auto"
         />
+        <Image
+          propName="icon"
+          alt="Icon"
+          maxWidth={80}
+          aspectRatio={1}
+          imageClassName="w-20 mb-5 mx-auto"
+        />
         <Text
           renderBlock={(props) => (
             <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
@@ -33,6 +40,15 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
             </h1>
           )}
           placeholder="Type a title..."
+          propName="title"
+        />
+        <Text
+          renderBlock={(props) => (
+            <h1 className="text-2xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
+              {props.children}
+            </h1>
+          )}
+          placeholder="Custom title..."
           propName="title"
         />
         <RichText
