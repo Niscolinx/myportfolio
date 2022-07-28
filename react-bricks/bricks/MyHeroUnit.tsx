@@ -41,6 +41,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
           )}
           placeholder="Type a title..."
           propName="title"
+        
         />
         <Text
           renderBlock={(props) => (
