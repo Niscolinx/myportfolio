@@ -12,7 +12,7 @@ const Hello: types.Brick = () => {
                             {props.children}
                         </p>
                     )}
-                    placeholder='custom text...'
+                    placeholder='custom text..'
                     propName='title'
                 />
             </div>
